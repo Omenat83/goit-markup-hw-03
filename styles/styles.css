@@ -36,10 +36,6 @@ p {
   margin-bottom: 0;
   margin-top: 0;
 }
-.col {
-  outline: 2px solid teal;
-  background: tomato;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -59,10 +55,18 @@ p {
 .make-block {
   display: block;
 }
+/* .col {
+  outline: 2px solid teal;
+  background: tomato;
+}
 .brd {
   outline: 1px solid violet;
-}
+} */
 /* -----------------footer--------------- */
+/* лінія */
+.header-line {
+  border-bottom: 1px solid #ececec;
+}
 /*логотип*/
 .logo {
   display: block;
@@ -115,10 +119,6 @@ p {
 /*контакти в шапці*/
 .top-contacts {
   color: var(--text-color);
-  /* letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14; */
 }
 .top-contacts:focus,
 .top-contacts:hover {
@@ -142,7 +142,6 @@ p {
   /* max-width: 696px; */
   margin-bottom: 30px;
 }
-
 /* -------------------text------------------ */
 /*заголовки секцій*/
 .section-title {
@@ -196,15 +195,11 @@ p {
   line-height: 1.88;
 }
 /* ---------студія оформлення -------------- */
-.feature {
-  display: flex;
-  gap: 30px;
-}
+.feature,
 .products {
   display: flex;
   gap: 30px;
 }
-
 .team-section {
   background-color: #f5f4fa;
 }
@@ -221,9 +216,28 @@ p {
   display: flex;
   gap: 30px;
 }
-/*----------------------------------------------*/
-.header-line {
-  border-bottom: 1px solid #ececec;
+/*-----------портфоліо оформлення---------------*/
+.examples-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.example-name {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.example-project {
+  /* border: 1px solid #eeeeee; */
+  width: 370px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
 }
 /* ---------------------------кнопки----------- */
 .button {
@@ -270,14 +284,13 @@ footer .logo-studio {
   margin-bottom: 20px;
 }
 .contacts {
-    font-style: normal;
+  font-style: normal;
   text-decoration: none;
 }
 .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
-
 }
 .footer-contacts {
   color: var(--basic-white);
