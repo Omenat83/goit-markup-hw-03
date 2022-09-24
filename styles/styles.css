@@ -3,6 +3,7 @@
   --title-color: #212121;
   --text-color: #757575;
   --basic-white: #ffffff;
+  --bckrg-grey: #2f303a;
 }
 /* ------загальні правила----------- */
 body {
@@ -54,6 +55,8 @@ p {
 }
 .make-block {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* .col {
   outline: 2px solid teal;
@@ -127,7 +130,7 @@ p {
 /* --------------------------main-------------------- */
 /* order  */
 .order {
-  background-color: #2f303a;
+  background-color: var(--bckrg-grey);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -167,18 +170,20 @@ p {
 .feature-title {
   margin-bottom: 10px;
 }
+.team-member {
+  padding: 30px 0;
+}
 .team-name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
-.team-profession {
+/*.team-profession {
   font-size: 16px;
   line-height: 1.19;
-}
+} */
 
 .examples h2 {
   color: var(--title-color);
@@ -195,6 +200,9 @@ p {
   line-height: 1.88;
 }
 /* ---------студія оформлення -------------- */
+.section.null {
+  padding-top: 0;
+}
 .feature,
 .products {
   display: flex;
@@ -204,8 +212,7 @@ p {
   background-color: #f5f4fa;
 }
 .team {
-  padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   min-width: 270px;
@@ -239,6 +246,9 @@ p {
   padding: 0;
   gap: 30px;
 }
+ .portfolio-title {
+  margin-bottom: 4px;
+ }
 /* ---------------------------кнопки----------- */
 .button {
   color: var(--title-color);
@@ -272,14 +282,15 @@ p {
 }
 /* ---------------------------підвал---------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bckrg-grey);
+  padding: 60px 0;
 }
 footer .logo-studio {
   color: var(--basic-white);
 }
-.footer-main {
+/* .footer-main {
   padding: 60px 0;
-}
+} */
 .footer-main a.make-block {
   margin-bottom: 20px;
 }
